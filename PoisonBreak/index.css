@@ -1,0 +1,95 @@
+
+body {
+    background-color: black;
+    font-family: "Noto Sans";
+    color: white;
+    font-size: 90%;
+    line-height: 2em;
+    margin: auto 0px;
+}
+
+#all{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#navi{
+    margin-bottom: 20;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    list-style: none;
+    text-align: center; 
+    padding: 20px 0 20px 0;
+}
+#navi > li {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+}
+
+#navi > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#navi > li > a:hover {
+    color: maroon;
+}
+
+#indexbanner {
+    margin: auto 0px;
+    text-align:center;
+}
+
+h2.poisonfang {
+    color: purple;
+}
+
+h2.breakclaw {
+    color: maroon;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    padding: 0 0 0 50px;
+}
+
+ul {
+    padding: 0 0 0 70px;
+}
+
+.setting{
+    margin: auto 0px;
+    text-align:center;
+    margin: 0px 10% 0px 10%;
+    float:left;
+}
+
+.description {
+    margin: 0 33% 0 10%;
+}
+
+.move{
+    background-color: aqua;
+    float:right;
+    margin: 0px 10% 0px 0%;
+    float:left;
+}
+
+.movelist > li {
+}
+
+.gallery{
+    margin: auto 0px;
+    text-align:left;
+    margin: 0px 10% 0px 10%;
+}
+
+.thumbnail {
+    width: 7rem;
+    border-radius: 4px; }

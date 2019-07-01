@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skills</title>
+    <script>
+        function showSkills() {
+
+            let poisonFangSkills = ['猛毒牙', '大蛇瞪眼', '毒尾', '毒液陷阱'];
+            poisonFangSkills.forEach(function (element) {
+                let li = document.createElement("li");
+                let skill = document.createTextNode(`${element}`);
+                li.appendChild(skill);
+                document.getElementById("poison-fang").appendChild(li);
+
+                
+            });
+
+
+            let breakClawSkills = ['撕裂爪', '劍舞', '電光一閃', '追打'];
+            let result = breakClawSkills.every(function (element) {
+                let li = document.createElement("li"); 
+                let skill = document.createTextNode(`${element}`);
+                li.appendChild(skill);
+                document.getElementById("break-claw").appendChild(li);
+
+                return element;
+            });
+
+            /*
+            let poisonFangSkills = ['猛毒牙', '大蛇瞪眼', '毒尾', '毒液陷阱'];
+            poisonFangSkills.forEach(function (element, index)  {
+                let id = `pfskill-${index}`;
+                let li = document.getElementById(id);
+
+                li.innerHTML = `${element}`;
+
+            });
+
+            let breakClawSkills = ['撕裂爪', '劍舞', '電光一閃', '追打'];
+            let result = breakClawSkills.every(function (element, index) {
+                let id = `bcskill-${index}`;
+                let li = document.getElementById(id);
+                
+                li.innerHTML = `${element}`;
+                return element;
+            });
+            console.log(result);
+            */
+        }
+
+        window.onload = showSkills;
+    </script>
+</head>
+<body>
+    <h1>Skill List</h1>
+    <h2>毒牙</h2>
+    <ul id="poison-fang"></ul>
+    <h2>碎爪</h2>
+    <ul id="break-claw"></ul>
+</body>
+</html>
